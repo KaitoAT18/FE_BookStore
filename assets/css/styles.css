@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-yellow: #ffca42;
+    --primary-color-blue: #1b3764;
+    --primary-color-white: #f6f8fc;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Inter", sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* ==================== Common ==================== */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1300px;
+    max-width: calc(100% - 48px);
+}
+
+.btn {
+    --width: 220px;
+    --height: 65px;
+
+    display: inline-block;
+    min-width: var(--width);
+    height: var(--height);
+    border: 1px solid var(--primary-color-yellow);
+    background: transparent;
+    color: var(--primary-color-blue);
+    text-align: center;
+    font-family: Cardo, serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: var(--height); /* 23.75px */
+    letter-spacing: 0.38px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ==================== Header ==================== */
+.header {
+    padding: 40px 310px 40px;
+    background: var(--primary-color-blue);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+}
+
+.logo__brand {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.25; /* 35px */
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 16px 24px;
+    font-weight: 500;
+    line-height: 1.25; /* 21.25px */
+}
+
+.cart {
+    position: relative;
+    margin-left: 2px;
+}
+
+.cart__notification {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: var(--primary-color-yellow);
+}
+
+.cart__value {
+    color: var(--primary-color-blue);
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.header-action__btn {
+    --width: 180px;
+    --height: 50px;
+
+    background: var(--primary-color-yellow);
+}
