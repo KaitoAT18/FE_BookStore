@@ -106,7 +106,6 @@ a {
 
 .cart {
     position: relative;
-    margin-left: 2px;
 }
 
 .cart:hover {
@@ -130,6 +129,12 @@ a {
     color: var(--primary-color-blue);
     font-weight: 800;
     font-size: 1rem;
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
 }
 
 .header-action__btn {
